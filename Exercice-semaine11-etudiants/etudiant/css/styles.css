@@ -22,6 +22,7 @@ body {
   background: #000 url("../images/fond/global.png") repeat;
   font: 1rem "Oranienbaum", serif;
   color: #fff;
+  background-attachment: fixed;
 }
 
 a {
@@ -58,10 +59,12 @@ h2 span {
 
 section.sports {
   background: url("../images/fond/bicycles.png") repeat;
+  background-attachment: fixed;
 }
 
 section.web {
   background: url("../images/fond/science.png") repeat;
+  background-attachment: fixed;
 }
 
 section.web img {
@@ -71,6 +74,7 @@ section.web img {
 section.photos {
   background: url("../images/fond/fond.jpg") no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 section.photos .images a img {
@@ -136,6 +140,30 @@ section.photos .images a {
 section.photos .images {
   flex-direction: column;
 }
+
+a.haut {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 4px solid #fff;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  bottom: 20px;
+  right: 15vw;
+
+  text-decoration: none;
+  color: black;
+}
+
+.material-symbols-outlined {
+  font-size: 24px;
+}
+
 /*----------------------------------------------------------------------------
     Elements
 ----------------------------------------------------------------------------*/
