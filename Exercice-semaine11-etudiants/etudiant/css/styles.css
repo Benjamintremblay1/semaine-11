@@ -16,10 +16,126 @@ html {
    Base
 ------------------------------------------------------------------------------*/
 
+/* Base */
+
+body {
+  background: #000 url("../images/fond/global.png") repeat;
+  font: 1rem "Oranienbaum", serif;
+  color: #fff;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: darkorange;
+}
+
+header,
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+}
+
+header h1 {
+  font: normal 6.25rem "Monoton", cursive;
+}
+
+h2 {
+  font: normal 2rem "Monoton", cursive;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+h2 span {
+  font: 1.0625rem "Oranienbaum", serif;
+  text-transform: none;
+}
+
+section.sports {
+  background: url("../images/fond/bicycles.png") repeat;
+}
+
+section.web {
+  background: url("../images/fond/science.png") repeat;
+}
+
+section.web img {
+  width: 50%;
+}
+
+section.photos {
+  background: url("../images/fond/fond.jpg") no-repeat;
+  background-size: cover;
+}
+
+section.photos .images a img {
+  width: 30%;
+}
 /*------------------------------------------------------------------------------
    Mise en page
 ------------------------------------------------------------------------------*/
 
+.boite {
+  width: 800px;
+  padding: 48px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+}
+
+header {
+  text-align: center;
+  position: relative;
+}
+
+header a {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+div.images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+div.images a {
+  width: 200px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+div.images a img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.images {
+  margin-bottom: 50px;
+}
+
+.lien_float {
+  background-color: darkred;
+  padding: 10px;
+  text-align: center;
+}
+
+section.photos .images a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section.photos .images {
+  flex-direction: column;
+}
 /*----------------------------------------------------------------------------
     Elements
 ----------------------------------------------------------------------------*/
